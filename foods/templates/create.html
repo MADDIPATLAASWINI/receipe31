@@ -1,0 +1,11 @@
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    Receipe_name:<input type="text" name="receipe_name"><br><br>
+    Ingredients:<input type="text" name="ingredients"><br><br>
+    Process: <input type="text" name="process"><br><br>
+    Image: <input type="file" name="image"><br><br>
+    user: <input type="text" name="user"><br><br>
+<input type="submit" value="save">
+
+</form>
+

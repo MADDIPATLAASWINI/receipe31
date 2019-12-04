@@ -1,0 +1,9 @@
+{% for receipe in receipe_list %}
+<a href="{% url 'foods:details' receipe.id %}"> {{ receipe.receipe_name }}</a>&nbsp &nbsp
+<a href="{% url 'foods:delete' receipe.id %}">Delete</a> &nbsp &nbsp {{ receipe.user }}<br><br>
+{% endfor %}
+
+<a href="{% url 'foods:create' %}">create receipe</a><br><br>
+
+<a href="{% url 'foods:logout_view' %}">LOGOUT</a>
+
